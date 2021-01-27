@@ -1,0 +1,6 @@
+{
+  "componentTesting": "",
+  "env": {
+    "reactDevtools": true
+  }
+}

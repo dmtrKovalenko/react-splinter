@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/dmitrijkovalenko/.nvm/versions/node/v12.18.3/bin/node /Users/dmitrijkovalenko/.yarn/bin/yarn.js add @babel/preset-env @babel/preset-react @babel/preset-typescript
+
+PATH: 
+  /Users/dmitrijkovalenko/.opam/4.11.1/bin:/Users/dmitrijkovalenko/.nvm/versions/node/v12.18.3/bin:/Users/dmitrijkovalenko/.yarn/bin:/Users/dmitrijkovalenko/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Apple/usr/bin:/Users/dmitrijkovalenko/.opam/4.11.1/bin:/Users/dmitrijkovalenko/.nvm/versions/node/v12.18.3/bin:/Users/dmitrijkovalenko/.yarn/bin:/Users/dmitrijkovalenko/.config/yarn/global/node_modules/.bin:/Users/dmitrijkovalenko/Library/Android/sdk/emulator:/Users/dmitrijkovalenko/Library/Android/sdk/tools:/Users/dmitrijkovalenko/Library/Android/sdk/tools/bin:/Users/dmitrijkovalenko/Library/Android/sdk/platform-tools:/Users/dmitrijkovalenko/Library/Android/sdk/emulator:/Users/dmitrijkovalenko/Library/Android/sdk/tools:/Users/dmitrijkovalenko/Library/Android/sdk/tools/bin:/Users/dmitrijkovalenko/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@cypress%2fwebpack-dev-server: Not found
+      at Request.params.callback [as _callback] (/Users/dmitrijkovalenko/.yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/Users/dmitrijkovalenko/.yarn/lib/cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/Users/dmitrijkovalenko/.yarn/lib/cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/Users/dmitrijkovalenko/.yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1220:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "dependencies": {
+      "cypress": "^6.3.0",
+      "@cypress/webpack-dev-server": "*"
+    },
+    "scripts": {
+      "cy:open": "node /Users/dmitrijkovalenko/dev/_cy/cypress/scripts/start.js  --component-testing --project ${PWD}"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

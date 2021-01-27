@@ -1,0 +1,16 @@
+{
+  "name": "react-splitter-tests",
+  "dependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "@cypress/react": "file:/Users/dmitrijkovalenko/dev/_cy/cypress/npm/react",
+    "@cypress/webpack-dev-server": "file:/Users/dmitrijkovalenko/dev/_cy/cypress/npm/webpack-dev-server",
+    "@percy/cypress": "^2.3.4",
+    "babel-loader": "^8.2.2",
+    "cypress": "^6.3.0"
+  },
+  "scripts": {
+    "cy:open": "node /Users/dmitrijkovalenko/dev/_cy/cypress/scripts/start.js  --component-testing --project ${PWD}"
+  }
+}

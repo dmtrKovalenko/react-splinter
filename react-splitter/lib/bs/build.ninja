@@ -1,0 +1,21 @@
+rescript = 1
+g_finger := /Users/dmitrijkovalenko/dev/react-splitter/node_modules/reason-react/lib/ocaml/install.stamp
+cleaner = /Users/dmitrijkovalenko/dev/react-splitter/node_modules/gentype/gentype.exe
+rule astj
+  command = /Users/dmitrijkovalenko/dev/react-splitter/node_modules/bs-platform/darwin/bsc.exe  -warn-error +101 -bs-v 8.4.2 -bs-jsx 3  -absname -bs-ast -o $out $i
+o src/Pane.ast : astj ../../src/Pane.res
+rule deps
+  command = /Users/dmitrijkovalenko/dev/react-splitter/node_modules/bs-platform/darwin/bsb_helper.exe -hash 062cbae7ab5ee377270a427db86d0c2e $in
+  restat = 1
+o src/Pane.d : deps src/Pane.ast
+rule mij
+  command = /Users/dmitrijkovalenko/dev/react-splitter/node_modules/bs-platform/darwin/bsc.exe -I src -I /Users/dmitrijkovalenko/dev/react-splitter/node_modules/reason-react/lib/ocaml   -warn-error +101 -bs-gentype /Users/dmitrijkovalenko/dev/react-splitter/node_modules/gentype/gentype.exe -bs-package-name rescript-project-template -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/Pane.cmj src/Pane.cmi ../../src/Pane.bs.js : mij src/Pane.ast
+o src/Index.ast : astj ../../src/Index.res
+o src/Index.d : deps src/Index.ast
+o src/Index.cmj src/Index.cmi ../../src/Index.bs.js : mij src/Index.ast
+o src/ReactHelper.ast : astj ../../src/ReactHelper.res
+o src/ReactHelper.d : deps src/ReactHelper.ast
+o src/ReactHelper.cmj src/ReactHelper.cmi ../../src/ReactHelper.bs.js : mij src/ReactHelper.ast

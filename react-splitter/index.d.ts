@@ -1,0 +1,1 @@
+export {  Index  } from './src/Index.gen'

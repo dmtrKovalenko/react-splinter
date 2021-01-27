@@ -1,0 +1,18 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o Pane.cmi : cp ../bs/src/Pane.cmi
+o Pane.cmj : cp ../bs/src/Pane.cmj
+o Pane.cmt : cp ../bs/src/Pane.cmt
+o Pane.res : cp ../../src/Pane.res
+o Index.cmi : cp ../bs/src/Index.cmi
+o Index.cmj : cp ../bs/src/Index.cmj
+o Index.cmt : cp ../bs/src/Index.cmt
+o Index.res : cp ../../src/Index.res
+o ReactHelper.cmi : cp ../bs/src/ReactHelper.cmi
+o ReactHelper.cmj : cp ../bs/src/ReactHelper.cmj
+o ReactHelper.cmt : cp ../bs/src/ReactHelper.cmt
+o ReactHelper.res : cp ../../src/ReactHelper.res
+build install.stamp : touch Pane.cmi Pane.cmj Index.cmi Index.cmj ReactHelper.cmi ReactHelper.cmj 
