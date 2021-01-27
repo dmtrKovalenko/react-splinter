@@ -1,3 +1,5 @@
+const percyHealthCheck = require('@percy/cypress/task')
+
 const babelConfig = require('../../babel.config.js')
 const { startDevServer } = require('@cypress/webpack-dev-server')
 
@@ -75,6 +77,7 @@ const webpackConfig = {
  */
 module.exports = (on, config) => {
   on('dev-server:start', (options) => startDevServer({ options, webpackConfig }))
-
+  on("task", percyHealthCheck);
+  
   return config
 }

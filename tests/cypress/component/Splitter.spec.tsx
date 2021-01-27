@@ -11,5 +11,7 @@ describe("<Splitter />", () => {
         <Pane> </Pane>
       </Index>
     );
+
+    cy.percySnapshot()
   });
 });

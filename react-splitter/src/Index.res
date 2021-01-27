@@ -2,5 +2,5 @@
 export make = (~children: array<React.element>) => {
 
 
-  <div> {React.string("WTF")} </div>
+  <div> {React.string("PURE PERCY TEST")} </div>
 }

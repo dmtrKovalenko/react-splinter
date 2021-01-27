@@ -3,9 +3,7 @@
 import * as React from "react";
 
 function Index(Props) {
-  var children = Props.children;
-  console.log(children);
-  return React.createElement("div", undefined);
+  return React.createElement("div", undefined, "PURE PERCY TEST");
 }
 
 var make = Index;

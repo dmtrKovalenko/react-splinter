@@ -11,6 +11,7 @@
     "cypress": "^6.3.0"
   },
   "scripts": {
-    "cy:open": "node /Users/dmitrijkovalenko/dev/_cy/cypress/scripts/start.js  --component-testing --project ${PWD}"
+    "cy:open": "node /Users/dmitrijkovalenko/dev/_cy/cypress/scripts/start.js  --component-testing --project ${PWD}",
+    "cy:run": "node /Users/dmitrijkovalenko/dev/_cy/cypress/scripts/run.js  --component-testing --project ${PWD}"
   }
 }

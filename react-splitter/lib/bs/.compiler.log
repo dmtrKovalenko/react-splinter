@@ -1,3 +1,13 @@
-#Start(1611669592778)
-Fatal error: exception Invalid_argument("A spread as a DOM element's children don't make sense written together. You can simply remove the spread.")
-#Done(1611669592794)
+#Start(1611759517323)
+
+  Warning number 27
+  /Users/dmitrijkovalenko/dev/react-splitter/react-splitter/src/Index.res:2:16-24
+  
+  1 │ @genType.as("Index") @react.component
+  2 │ export make = (~children: array<React.element>) => {
+  3 │ 
+  4 │ 
+  
+  unused variable children.
+  
+#Done(1611759517443)
