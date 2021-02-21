@@ -7,12 +7,20 @@ o Pane.cmi : cp ../bs/src/Pane.cmi
 o Pane.cmj : cp ../bs/src/Pane.cmj
 o Pane.cmt : cp ../bs/src/Pane.cmt
 o Pane.res : cp ../../src/Pane.res
-o Index.cmi : cp ../bs/src/Index.cmi
-o Index.cmj : cp ../bs/src/Index.cmj
-o Index.cmt : cp ../bs/src/Index.cmt
-o Index.res : cp ../../src/Index.res
+o Spread.cmi : cp ../bs/src/Spread.cmi
+o Spread.cmj : cp ../bs/src/Spread.cmj
+o Spread.cmt : cp ../bs/src/Spread.cmt
+o Spread.res : cp ../../src/Spread.res
+o Resizer.cmi : cp ../bs/src/Resizer.cmi
+o Resizer.cmj : cp ../bs/src/Resizer.cmj
+o Resizer.cmt : cp ../bs/src/Resizer.cmt
+o Resizer.res : cp ../../src/Resizer.res
+o Splinter.cmi : cp ../bs/src/Splinter.cmi
+o Splinter.cmj : cp ../bs/src/Splinter.cmj
+o Splinter.cmt : cp ../bs/src/Splinter.cmt
+o Splinter.res : cp ../../src/Splinter.res
 o ReactHelper.cmi : cp ../bs/src/ReactHelper.cmi
 o ReactHelper.cmj : cp ../bs/src/ReactHelper.cmj
 o ReactHelper.cmt : cp ../bs/src/ReactHelper.cmt
 o ReactHelper.res : cp ../../src/ReactHelper.res
-build install.stamp : touch Pane.cmi Pane.cmj Index.cmi Index.cmj ReactHelper.cmi ReactHelper.cmj 
+build install.stamp : touch Pane.cmi Pane.cmj Spread.cmi Spread.cmj Resizer.cmi Resizer.cmj Splinter.cmi Splinter.cmj ReactHelper.cmi ReactHelper.cmj 

@@ -5,7 +5,7 @@ rule astj
   command = /Users/dmitrijkovalenko/dev/react-splitter/node_modules/bs-platform/darwin/bsc.exe  -warn-error +101 -bs-v 8.4.2 -bs-jsx 3  -absname -bs-ast -o $out $i
 o src/Pane.ast : astj ../../src/Pane.res
 rule deps
-  command = /Users/dmitrijkovalenko/dev/react-splitter/node_modules/bs-platform/darwin/bsb_helper.exe -hash 062cbae7ab5ee377270a427db86d0c2e $in
+  command = /Users/dmitrijkovalenko/dev/react-splitter/node_modules/bs-platform/darwin/bsb_helper.exe -hash ec8cc85eccb0c7fe0f2f8f1bdca72671 $in
   restat = 1
 o src/Pane.d : deps src/Pane.ast
 rule mij
@@ -13,9 +13,15 @@ rule mij
   dyndep = 1
   restat = 1
 o src/Pane.cmj src/Pane.cmi ../../src/Pane.bs.js : mij src/Pane.ast
-o src/Index.ast : astj ../../src/Index.res
-o src/Index.d : deps src/Index.ast
-o src/Index.cmj src/Index.cmi ../../src/Index.bs.js : mij src/Index.ast
+o src/Spread.ast : astj ../../src/Spread.res
+o src/Spread.d : deps src/Spread.ast
+o src/Spread.cmj src/Spread.cmi ../../src/Spread.bs.js : mij src/Spread.ast
+o src/Resizer.ast : astj ../../src/Resizer.res
+o src/Resizer.d : deps src/Resizer.ast
+o src/Resizer.cmj src/Resizer.cmi ../../src/Resizer.bs.js : mij src/Resizer.ast
+o src/Splinter.ast : astj ../../src/Splinter.res
+o src/Splinter.d : deps src/Splinter.ast
+o src/Splinter.cmj src/Splinter.cmi ../../src/Splinter.bs.js : mij src/Splinter.ast
 o src/ReactHelper.ast : astj ../../src/ReactHelper.res
 o src/ReactHelper.d : deps src/ReactHelper.ast
 o src/ReactHelper.cmj src/ReactHelper.cmi ../../src/ReactHelper.bs.js : mij src/ReactHelper.ast

@@ -8,6 +8,16 @@ import * as React from 'react';
 const PaneBS = require('./Pane.bs');
 
 // tslint:disable-next-line:interface-over-type-literal
-export type Props = { readonly children: React.ReactNode };
+export type Props<initialSize> = {
+  readonly _renderResizer?: () => JSX.Element; 
+  readonly children: React.ReactNode; 
+  readonly initialSize?: initialSize; 
+  readonly size?: string
+};
 
-export const Pane: React.ComponentType<{ readonly children: React.ReactNode }> = PaneBS.make;
+export const Pane: React.ComponentType<{
+  readonly _renderResizer?: () => JSX.Element; 
+  readonly children: React.ReactNode; 
+  readonly initialSize?: any; 
+  readonly size?: string
+}> = PaneBS.make;

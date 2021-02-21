@@ -2,11 +2,9 @@
 
 import * as React from "react";
 
-function Index(Props) {
-  return React.createElement("div", undefined, "PURE PERCY TEST");
+function make(props, children) {
+  return React.cloneElement(children, props);
 }
-
-var make = Index;
 
 export {
   make ,

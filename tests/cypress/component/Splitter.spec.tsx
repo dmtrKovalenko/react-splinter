@@ -1,17 +1,28 @@
 import * as React from "react";
 import { mount } from "@cypress/react";
-import { Index } from "../../../react-splitter/src/Index.gen";
+import { Splinter } from "../../../react-splitter/src/Splinter.gen";
 import { Pane } from "../../../react-splitter/src/Pane.gen";
 
 describe("<Splitter />", () => {
   it("renders component", () => {
     mount(
-      <Index>
-        <Pane> </Pane>
-        <Pane> </Pane>
-      </Index>
+      <Splinter split="Vertical">
+        <Pane initialSize={20}> pane 1 </Pane>
+        <Pane> pane 2 </Pane>
+      </Splinter>
     );
 
-    cy.percySnapshot()
+    cy.percySnapshot();
+  });
+
+  it("resizes", () => {
+    mount(
+      <Splinter split="Vertical">
+        <Pane initialSize={20}> pane 1 </Pane>
+        <Pane> pane 2 </Pane>
+      </Splinter>
+    );
+
+    cy.percySnapshot();
   });
 });
