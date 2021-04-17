@@ -1,5 +1,5 @@
 @genType.as("Pane") @react.component
-export make = (~children, ~size=?, ~initialSize=?, ~_renderResizer=?, ()) => {
+export make = (~children, ~size=?, ~_initialSize=?, ~_renderResizer=?, ()) => {
   let flexBasis = switch size {
   | None => "100%"
   | Some(size) => `${size}%`

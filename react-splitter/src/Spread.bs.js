@@ -2,9 +2,11 @@
 
 import * as React from "react";
 
-function make(props, children) {
-  return React.cloneElement(children, props);
+function Spread(Props) {
+  return React.cloneElement(Props.children, Props.props);
 }
+
+var make = Spread;
 
 export {
   make ,

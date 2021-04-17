@@ -22,7 +22,7 @@ let mapChildrenToSizes = children => {
   }, [])
 }
 
-let recalculateSizes = (offset, resizingIndex, sizes) => {
+let recalculateSizes = (_offset, resizingIndex, sizes) => {
   let originalValue = sizes[resizingIndex]
   let newValue = originalValue->Belt.Option.map(value => value + 2)
 
@@ -39,7 +39,7 @@ let recalculateSizes = (offset, resizingIndex, sizes) => {
 @genType.as("Splinter") @react.component
 export make = (~children: array<React.element>, ~split) => {
   let rootRef = React.useRef(Js.Nullable.null)
-  let rootSizeRef = React.useRef(None)
+  let _rootSizeRef = React.useRef(None)
 
   let (sizes, setSizes) = React.useState(() => mapChildrenToSizes(children))
 

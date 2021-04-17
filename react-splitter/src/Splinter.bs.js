@@ -26,7 +26,7 @@ function mapChildrenToSizes(children) {
               }), []);
 }
 
-function recalculateSizes(offset, resizingIndex, sizes) {
+function recalculateSizes(_offset, resizingIndex, sizes) {
   var originalValue = Caml_array.get(sizes, resizingIndex);
   var newValue = Belt_Option.map(originalValue, (function (value) {
           return value + 2 | 0;
