@@ -9,6 +9,7 @@ let sharedStyle = ReactDOMRe.Style.make(
 
 type splitVariant = Horizontal | Vertical
 
+@genType.as("Resizer")
 @react.component
 let make = (~onResize, ~split) => {
   let (isMouseDown, setIsMoueDown) = React.useState(() => false)

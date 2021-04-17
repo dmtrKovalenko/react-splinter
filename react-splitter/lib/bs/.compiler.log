@@ -1,7 +1,7 @@
-#Start(1611929877451)
+#Start(1618678079482)
 
   Warning number 27
-  /Users/dmitrijkovalenko/dev/react-splitter/react-splitter/src/Pane.res:2:36-47
+  /Users/dmitrijkovalenko/dev/react-splinter/react-splitter/src/Pane.res:2:36-47
   
   1 │ @genType.as("Pane") @react.component
   2 │ export make = (~children, ~size=?, ~initialSize=?, ~_renderResizer=?, (
@@ -13,7 +13,7 @@
   
 
   Warning number 27
-  /Users/dmitrijkovalenko/dev/react-splitter/react-splitter/src/Splinter.res:25:25-30
+  /Users/dmitrijkovalenko/dev/react-splinter/react-splitter/src/Splinter.res:25:25-30
   
   23 │ }
   24 │ 
@@ -25,7 +25,7 @@
   
 
   Warning number 26
-  /Users/dmitrijkovalenko/dev/react-splitter/react-splitter/src/Splinter.res:42:7-17
+  /Users/dmitrijkovalenko/dev/react-splinter/react-splitter/src/Splinter.res:42:7-17
   
   40 │ export make = (~children: array<React.element>, ~split) => {
   41 │   let rootRef = React.useRef(Js.Nullable.null)
@@ -36,4 +36,4 @@
   
   unused variable rootSizeRef.
   
-#Done(1611929877581)
+#Done(1618678079654)
